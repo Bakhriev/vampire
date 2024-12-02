@@ -11,7 +11,7 @@ export const MobileMenu = ({ isMenuOpened }: { isMenuOpened: boolean }) => {
           Changeling: the Lost
         </a>
       </div>
-      <div className="mobile-menu__inner">
+      <div className="mobile-menu__inner custom-scroll">
         <div className="mobile-menu__col">
           <div className="nav-group">
             <div className="nav-group__title">Сеттинг</div>
