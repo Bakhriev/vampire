@@ -4,4 +4,10 @@ html {
   font-size: 17px;
   line-height: 160%;
   color: rgba(255, 255, 255, 0.7);
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 140%;
+    color: #8f99a1;
+  }
 }

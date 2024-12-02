@@ -15,5 +15,11 @@
 // Components
 @use "./components/mobile-menu";
 @use "./components/search";
+@use "./components/card";
+@use "./components/cards-container";
+@use "./components/info-block";
 @use "./components/header";
 @use "./components/footer";
+
+// Pages
+@use "./pages/home";
