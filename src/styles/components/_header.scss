@@ -1,3 +1,5 @@
+@use "../helpers/mixins" as *;
+
 .logo {
   display: block;
 
@@ -57,11 +59,21 @@
     &.active {
       background-color: #0e1720;
       border-color: #8b0000;
+
+      @include hover {
+        background-color: #0e1720;
+      }
     }
 
     display: inline-block;
     padding: 18px 20px;
 
     border-bottom: 1px solid var(--dark-blue);
+
+    transition: background-color 150ms ease-in-out;
+
+    @include hover {
+      background-color: #060c11;
+    }
   }
 }

@@ -13,7 +13,7 @@ export const Header = () => {
         <div className="header__logo logo">
           <Image
             className="logo__img"
-            src="/logo.png"
+            src="/icons/logo.png"
             alt="logo"
             width={62}
             height={36}
@@ -41,13 +41,23 @@ export const Header = () => {
           onClick={() => setIsMenuOpened(!isMenuOpened)}
           className="header__burger btn-reset"
         >
-          <Image
-            priority
-            width={18}
-            height={14}
-            src={"/menu.svg"}
-            alt="Follow us on Twitter"
-          />
+          {isMenuOpened ? (
+            <Image
+              priority
+              width={20}
+              height={20}
+              src={"/icons/close.svg"}
+              alt="Follow us on Twitter"
+            />
+          ) : (
+            <Image
+              priority
+              width={20}
+              height={20}
+              src={"/icons/menu.svg"}
+              alt="Follow us on Twitter"
+            />
+          )}
         </button>
 
         <MobileMenu isMenuOpened={isMenuOpened} />

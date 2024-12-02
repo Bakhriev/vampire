@@ -26,7 +26,7 @@
   border-radius: 0 0 10px 10px;
   background-color: #091117;
 
-  transition: opacity 150ms ease-in-out, visibility 150ms ease-in-out;
+  transition: opacity 50ms linear, visibility 50ms linear;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
