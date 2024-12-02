@@ -5,7 +5,7 @@ import { MobileMenu } from "../mobile-menu";
 import { useState } from "react";
 
 export const Header = () => {
-  const [isMenuOpened, setIsMenuOpened] = useState(true);
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   return (
     <header className="header">
