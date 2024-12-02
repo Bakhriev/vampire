@@ -30,3 +30,20 @@
 body {
   background-color: #141f26;
 }
+
+.custom-scroll {
+  &::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #940000;
+  }
+}

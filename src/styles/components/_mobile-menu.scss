@@ -18,7 +18,8 @@
   max-width: 690px;
   width: 100%;
   min-height: 300px;
-  max-height: calc(100vh - 140px);
+
+  max-height: calc(100dvh - 140px);
 
   overflow-y: auto;
 
@@ -61,7 +62,7 @@
     gap: 68px;
 
     @media screen and (max-width: 768px) {
-      max-height: calc(100vh - 166px);
+      max-height: calc(100dvh - 166px);
       overflow-y: auto;
       flex-direction: column;
       padding-bottom: 20px;
@@ -107,22 +108,5 @@
     @include hover {
       color: var(--white);
     }
-  }
-}
-
-.custom-scroll {
-  &::-webkit-scrollbar-track {
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  &::-webkit-scrollbar {
-    width: 2px;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 15px;
-    background-color: #940000;
   }
 }
