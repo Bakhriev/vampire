@@ -15,7 +15,19 @@
 
     inset: 0;
 
-    background: linear-gradient(223deg, rgba(9, 17, 23, 0.4) 0%, #091117 100%);
+    background: linear-gradient(
+      222.46deg,
+      rgba(9, 17, 23, 0.36) 47.472%,
+      rgba(9, 17, 23, 0.9) 83.117%
+    );
+
+    @media screen and (max-width: 480px) {
+      background: linear-gradient(
+        222.46deg,
+        rgba(9, 17, 23, 0) 47.31%,
+        rgba(9, 17, 23, 0.9) 83.289%
+      );
+    }
   }
 
   &__img {
