@@ -8,12 +8,22 @@
 }
 
 .main {
+  padding: 36px 0;
+
   flex-grow: 1;
 
+  background-color: #131a20;
   background-image: url("../../images/bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 14px;
+    padding-bottom: 20px;
+
+    background-image: none;
+  }
 }
 
 .container {
@@ -28,7 +38,7 @@
 }
 
 body {
-  background-color: #141f26;
+  background-color: #131a20;
 }
 
 .custom-scroll {
