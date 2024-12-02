@@ -2,7 +2,7 @@
 
 export const MobileMenu = ({ isMenuOpened }: { isMenuOpened: boolean }) => {
   return (
-    <div className={`mobile-menu container ${isMenuOpened ? "active" : ""}`}>
+    <div className={`mobile-menu ${isMenuOpened ? "active" : ""}`}>
       <div className="mobile-menu__links">
         <a href="#" className="mobile-menu__link">
           Vampire: The Requiem
