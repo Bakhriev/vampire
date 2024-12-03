@@ -3,13 +3,15 @@ import React, { FC } from "react";
 
 interface ICard {
   imageUrl: string;
-  imageAlt?: string;
   title: string;
+  href: string;
+  imageAlt?: string;
 }
 
-export const Card: FC<ICard> = ({ imageUrl, imageAlt, title }) => {
+export const Card: FC<ICard> = ({ imageUrl, imageAlt, title, href }) => {
   return (
     <div className="card">
+      <a href={href} className="card__link"></a>
       <Image
         className="card__img"
         src={imageUrl}

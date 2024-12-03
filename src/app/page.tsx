@@ -14,12 +14,32 @@ export default function Home() {
           <Search className="home-page__search" />
 
           <CardsContainer className="home-page__cards">
-            <Card imageUrl="/images/card-setting.jpg" title="Сеттинг" />
-            <Card imageUrl="/images/card-clans.jpg" title="Кланы" />
-            <Card imageUrl="/images/card-spec.jpg" title="Специализации" />
-            <Card imageUrl="/images/card-benefits.jpg" title="Преимущества" />
-            <Card imageUrl="/images/card-covenants.jpg" title="Ковенанты" />
-            <Card imageUrl="/images/card-others.jpg" title="Другие фракции" />
+            <Card
+              href="#"
+              imageUrl="/images/card-setting.jpg"
+              title="Сеттинг"
+            />
+            <Card href="#" imageUrl="/images/card-clans.jpg" title="Кланы" />
+            <Card
+              href="#"
+              imageUrl="/images/card-spec.jpg"
+              title="Специализации"
+            />
+            <Card
+              href="#"
+              imageUrl="/images/card-benefits.jpg"
+              title="Преимущества"
+            />
+            <Card
+              href="#"
+              imageUrl="/images/card-covenants.jpg"
+              title="Ковенанты"
+            />
+            <Card
+              href="#"
+              imageUrl="/images/card-others.jpg"
+              title="Другие фракции"
+            />
           </CardsContainer>
 
           <div className="info-block">

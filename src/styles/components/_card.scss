@@ -1,3 +1,5 @@
+@use "../helpers/mixins" as *;
+
 .card {
   position: relative;
 
@@ -7,6 +9,7 @@
 
   border-radius: 15px;
   overflow: hidden;
+  transition: box-shadow 150ms ease-in-out;
 
   &::before {
     content: "";
@@ -28,6 +31,16 @@
         rgba(9, 17, 23, 0.9) 83.289%
       );
     }
+  }
+
+  @include hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &__link {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
   }
 
   &__img {
